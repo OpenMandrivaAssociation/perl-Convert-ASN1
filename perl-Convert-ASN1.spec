@@ -1,6 +1,6 @@
 %define real_name Convert-ASN1
 %define name perl-%{real_name}
-%define version 0.20
+%define version 0.21
 %define release %mkrel 1
 
 Summary: 	ASN.1 Encode/Decode library for perl
