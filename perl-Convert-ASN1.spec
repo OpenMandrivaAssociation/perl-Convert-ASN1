@@ -1,20 +1,18 @@
-%define real_name Convert-ASN1
-%define name perl-%{real_name}
-%define version 0.22
-%define release %mkrel 1
+%define upstream_name    Convert-ASN1
+%define upstream_version 0.22
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary: 	ASN.1 Encode/Decode library for perl
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
-License: 	GPL or Artistic
+License: 	GPL+ or Artistic
 Group: 		Development/Perl
-Source: 	http://www.cpan.org/authors/id/GBARR/%{real_name}-%{version}.tar.bz2
-URL: 		http://search.cpan.org/dist/%{real_name}/
-BuildRequires:	perl-devel
+Url: 		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://www.cpan.org/authors/id/GBARR/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch: 	noarch
-BuildRoot: 	%{_tmppath}/%{name}-buildroot/
-Requires:	perl
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl module used to encode and decode ASN.1 data structures using
@@ -23,8 +21,7 @@ BER/DER rules.
 Needed by webmin to handle the OpenLDAP modules properly.
 
 %prep
-
-%setup -q -n %{real_name}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -45,4 +42,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README examples/*
 %{perl_vendorlib}/Convert/*
 %{_mandir}/*/*
-
