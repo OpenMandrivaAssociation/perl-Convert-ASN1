@@ -32,7 +32,7 @@ Needed by webmin to handle the OpenLDAP modules properly.
 %makeinstall_std
 
 %files
-%doc ChangeLog README examples/*
+%doc ChangeLog  examples/*
 %{perl_vendorlib}/Convert/*
 %{_mandir}/man3/*
 
