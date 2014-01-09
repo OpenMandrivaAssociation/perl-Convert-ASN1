@@ -1,2 +1,4 @@
+removed_sources:
+  Convert-ASN1-0.22.tar.bz2: 2ef8ae6be997894973832e9ff74063308968bd1c
 sources:
-  "Convert-ASN1-0.22.tar.bz2": 2ef8ae6be997894973832e9ff74063308968bd1c
+  Convert-ASN1-0.26.tar.gz: 44117ad491b4cf3a7bd0f913f179a147f9b97c9b
