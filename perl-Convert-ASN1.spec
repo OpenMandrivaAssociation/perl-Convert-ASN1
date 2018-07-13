@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/authors/id/GBARR/Convert-ASN1-%{upstream_version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(Math::BigInt)
 BuildRequires:	perl-devel
 
 %description
