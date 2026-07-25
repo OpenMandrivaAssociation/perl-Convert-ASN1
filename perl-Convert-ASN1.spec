@@ -1,14 +1,14 @@
 %define upstream_name    Convert-ASN1
-%define upstream_version 0.26
+%define upstream_version 0.34
 
 Summary:	ASN.1 Encode/Decode library for perl
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	8
+Version:	%{upstream_version}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/authors/id/GBARR/Convert-ASN1-%{upstream_version}.tar.gz
+Url:		https://github.com/gbarr/perl-Convert-ASN1
+Source0:	https://cpan.metacpan.org/authors/id/T/TI/TIMLEGGE/Convert-ASN1-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Math::BigInt)
