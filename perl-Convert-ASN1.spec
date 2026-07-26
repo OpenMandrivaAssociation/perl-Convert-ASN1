@@ -1,14 +1,12 @@
 %define upstream_name    Convert-ASN1
-%define upstream_version 0.34
-
 Summary:	ASN.1 Encode/Decode library for perl
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.34
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/gbarr/perl-Convert-ASN1
-Source0:	https://cpan.metacpan.org/authors/id/T/TI/TIMLEGGE/Convert-ASN1-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/T/TI/TIMLEGGE/Convert-ASN1-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Math::BigInt)
@@ -21,7 +19,7 @@ BER/DER rules.
 Needed by webmin to handle the OpenLDAP modules properly.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
