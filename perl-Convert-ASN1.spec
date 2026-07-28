@@ -2,7 +2,7 @@
 Summary:	ASN.1 Encode/Decode library for perl
 Name:		perl-%{upstream_name}
 Version:	0.34
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/gbarr/perl-Convert-ASN1
@@ -11,6 +11,8 @@ BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Math::BigInt)
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::More)
+BuildRequires: perl-Test-Simple
 
 %description
 Perl module used to encode and decode ASN.1 data structures using
